@@ -13,11 +13,11 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 1rem;
 }
 
 h3 {
@@ -37,18 +37,21 @@ header {
   background: #262626;
   height: 50px;
   text-align: center;
+  width: 100%;
+  font-size: 0.8rem;
 }
 
 header .contact {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   margin: 10px;
 }
 
@@ -84,26 +87,6 @@ header .social .sould {
           box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
 }
 
-header .social .facebook {
-  width: 50px;
-  height: 35px;
-  position: absolute;
-  background: blue;
-  border-radius: 10px;
-  top: 8px;
-  right: 20px;
-}
-
-header .social .facebook::before {
-  content: "";
-  background: blue;
-  position: absolute;
-  height: 10px;
-  width: 5px;
-  top: 10px;
-  right: 10p;
-}
-
 header .social i {
   padding: 5px;
   color: #fff;
@@ -128,33 +111,61 @@ h1 {
   text-transform: capitalize;
   text-align: center;
   margin: 20px;
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 .prodact {
+  font-size: 0.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 80%;
-  margin: 30px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.prodact .pic_prodact {
+  width: 100%;
+}
+
+.prodact .pic_prodact img {
+  width: 100%;
 }
 
 .prodact .viw {
-  width: 40%;
+  width: 100%;
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+
+.prodact .viw h3 {
+  font-size: 0.8rem;
+}
+
+.prodact .viw p span {
+  color: red;
+}
+
+.prodact .viw p del {
+  text-decoration: line-through;
 }
 
 .overview {
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: 50px auto;
+  font-size: 00.8rem;
 }
 
 .overview table {
   text-align: center;
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
 }
 
@@ -174,14 +185,19 @@ h1 {
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+  font-size: 0.8rem;
 }
 
 .con h3 {
   text-align: center;
   text-transform: capitalize;
-  font-size: 2rem;
+  font-size: 1rem;
   margin-top: 50px;
   margin-bottom: 80px;
+}
+
+.con h2 {
+  margin: 30px 0;
 }
 
 .con img {
@@ -240,7 +256,7 @@ h1 {
 
 .con .ul-ar {
   text-align: right;
-  font-size: 1.5rem;
+  font-size: 0.9rem;
   direction: rtl;
 }
 
@@ -250,7 +266,6 @@ h1 {
 
 .contactus {
   margin: 10px auto;
-  width: 80%;
 }
 
 .contactus input,
@@ -258,12 +273,12 @@ h1 {
 .contactus button {
   padding: 10px;
   margin: 10px;
-  width: 40%;
+  width: 90%;
+  padding: 5px;
 }
 
 .contactus-ar {
   margin: 10px auto;
-  width: 80%;
   direction: rtl;
   text-align: right;
 }
@@ -273,13 +288,8 @@ h1 {
 .contactus-ar button {
   padding: 10px;
   margin: 10px;
-  width: 40%;
+  width: 90%;
   direction: rtl;
-}
-
-.contactus-ar legend {
-  right: 20%;
-  color: red;
 }
 
 footer {
@@ -288,5 +298,7 @@ footer {
   height: 72px;
   color: #fff;
   text-align: center;
+  margin: 30px 0;
+  padding: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
